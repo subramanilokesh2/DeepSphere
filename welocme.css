@@ -1,0 +1,130 @@
+.user-details-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #888;
+    position: relative;
+    opacity: 0; 
+    transform: scale(0.5); 
+    animation: fadeIn 1s ease forwards, scaleUp 1s ease forwards; 
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    max-width: 100px; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.logout-button {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.input-fields {
+    display: none;
+}
+
+.input-fields.active {
+    display: block;
+}
+/* Apply styles to the data-entry-box */
+.data-entry-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Style the form elements */
+form {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#netProfitLabel, #netProfit, #costLabel, #cost {
+    display: none;
+}

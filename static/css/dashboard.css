@@ -1,0 +1,178 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the .user-details-box */
+.user-details-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #888;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeIn 1s ease forwards, scaleUp 1s ease forwards;
+    position: relative;
+    margin: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style the logout button */
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Style the logo */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    max-width: 100px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Style the .data-entry-box */
+.data-entry-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Style the form elements */
+form {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#netProfitLabel, #netProfit, #costLabel, #cost {
+    display: none;
+}
+.mt-4 {
+    margin-top: 20px;
+}
+
+/* Style for the h2 element inside the container */
+.mt-4 h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Style for the table container with class table-responsive */
+.table-responsive {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Style for the table within the .table-responsive */
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for table headers */
+.table-responsive th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table data */
+.table-responsive td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Different colors for each column */
+.table-responsive tr:hover td {
+    background-color: #e0e0e0; /* Hover effect */
+}
+
+/* Color for each column */
+.table-responsive td:nth-child(1) {
+    background-color: #FFD700; /* Column 1 - Yellow */
+}
+
+.table-responsive td:nth-child(2) {
+    background-color: #87CEEB; /* Column 2 - Sky Blue */
+}
+
+.table-responsive td:nth-child(3) {
+    background-color: #FFA07A; /* Column 3 - Light Salmon */
+}
+
+    
+
+    
+    
+
+  

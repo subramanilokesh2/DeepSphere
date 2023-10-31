@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="user-details-box">
+
+        <form action="/logout" method="POST">
+        <button class="logout-button">Logout</button>
+        </form>
+
+        <img class="logo" src="{{ url_for('static', filename='images/logo1.jpg') }}" alt="Logo">
+        <p>Name: {{ session.name }}</p>
+        <p>PhoneNumber: {{ session.phone }}</p>
+        <p>Username {{ session.username }}!</p>
+        <p>Gender: {{ session.gender }}</p>
+        <p>Salary: {{ session.salary }}</p>
+    </div>
+
+    <div class="container">
+        <center>
+        <h1 class="mt-5">Calculate Your spending limit and savings here!!!</h1>
+        <form method="POST" action="/predict" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="file">Upload a CSV file:</label>
+                <input type="file" class="form-control-file" name="file" id="file">
+            </div><br><br>
+            <button type="submit" class="btn btn-primary">Upload and Predict</button>
+        </form>
+    </center>
+        
+        {% if result %}
+        <div class="mt-4">
+            <h2>Results:</h2>
+            <div class="table-responsive">
+                {{ result | safe }}
+            </div>
+        </div>
+        {% endif %}
+
+</body>
+</html>
